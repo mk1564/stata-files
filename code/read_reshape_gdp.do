@@ -4,4 +4,4 @@ import delimited "https://raw.githubusercontent.com/korenmiklos/dc-economics-dat
 reshape long gdp, i(countrycode ) j(year)
 rename gdp gdp_per_capita
 label variable gdp_per_capita "GDP per capita (USD?)"
-save "derived/gdp_per_capita.dta"
+save "../data/derived/gdp_per_capita.dta", replace
